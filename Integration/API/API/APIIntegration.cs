@@ -1,9 +1,9 @@
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using PC3API.Integration.data;
+using Practicatresss.Integration.data;
 
-namespace PC3API.Integration.API
+namespace Practicatresss.Integration.API
 {
     public class APIIntegration
     {

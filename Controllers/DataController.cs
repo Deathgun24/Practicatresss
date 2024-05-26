@@ -5,10 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PC3API.Integration.API;
-using PC3API.Integration.data;
+using Practicatresss.Integration.API;
+using Practicatresss.Integration.data;
+using Practicatresss.Integration.API;
 
-namespace PC3API.Controllers
+namespace Practicatresss.Controllers
 {
     public class DataController : Controller
     {
@@ -36,7 +37,7 @@ namespace PC3API.Controllers
             return View("Error!");
         }
 
-        public async Task<IActionResult> Info(int id)
+        public async Task<IActionResult> Details(int id)
         {
             List<Datos> datos = await _integracion.Lista();
             List<Datos> lista = datos.Where(todo => todo.id == id)
