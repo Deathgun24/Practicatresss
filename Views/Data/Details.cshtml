@@ -13,19 +13,19 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.id)
+                    Id Usuario
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.first_name)
+                    Primer nombre
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.last_name)
+                    Correo
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.email)
+                    Apellido
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.avatar)
+                    Avatar
                 </th>
                 <th></th>
             </tr>
@@ -50,7 +50,7 @@
                         <img src="@Html.DisplayFor(modelItem => item.avatar)" class="d-block image-fit ">
                     </td>
                     <td>
-                        <a asp-action="Info" asp-route-id="@item.id">Detalles</a>
+
                     </td>
                 </tr>
             }

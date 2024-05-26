@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PC3API.Integration.data
+namespace Practicatresss.Integration.data
 {
     public class Datos
     {

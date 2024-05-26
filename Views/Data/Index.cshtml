@@ -4,30 +4,17 @@
     ViewData["Title"] = "LISTA";
 }
 
-
-
 <div class="container">
+    <h1>LISTA</h1>
 
-    <h1>LISTA </h1>
-
-    <table class=" " style="width: 100px;">
+    <table class="" style="width: 100px;">
         <thead>
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.id)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.first_name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.last_name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.email)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.avatar)
-                </th>
+                <th>Id del usuario</th>
+                <th>primer nombre</th>
+                <th>Corre</th>
+                <th>Apellido</th>
+                <th>Avatar</th>
                 <th></th>
             </tr>
         </thead>
@@ -35,27 +22,14 @@
             @foreach (var item in Model)
             {
                 <tr class="table-row" data-id="@item.id">
-                    <td>
-                        @Html.DisplayFor(modelItem => item.id)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.email)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.first_name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.last_name)
-                    </td>
-                    <td>
-                        <img src="@Html.DisplayFor(modelItem => item.avatar)" class="d-block image-fit ">
-                    </td>
-                    <td>
-                        <a asp-action="Info" asp-route-id="@item.id">Detalles</a>
-                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.first_name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.last_name)</td>
+                    <td><img src="@Html.DisplayFor(modelItem => item.avatar)" class="d-block image-fit"></td>
+                    <td><a asp-action="details" asp-route-id="@item.id">Detalles</a></td>
                 </tr>
             }
         </tbody>
     </table>
-
 </div>

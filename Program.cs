@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Practicatresss.Data;
-using PC3API.Integration.API;
+using Practicatresss.Integration.API;
 using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
